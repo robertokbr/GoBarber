@@ -33,41 +33,6 @@ Complete toolkit to improved the barbershop bussines!
   <img src="https://github.com/robertokbr/GoBarber-Web/blob/master/.Github/signout.png"/>
 
 
-# 🚧 In progress
-
-- [ReactJs with Typescript](https://reactjs.org) - A JavaScript library for building user interfaces
-- [react-router-dom]()
-- [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and NodeJs
-- [Uuidv4]()
-- [Yup]()
-- [Styled-components]()
-- [React-Spring](https://www.react-spring.io/)
-- [Eslint]()
-- [Prettier]()
-- [EditorConfig]()
-
-## 🎈 Project Style
-
-* EditorConfig
-* Eslint -config-airbnb
-* Prettier
-
-## :information_source: How To Use
-
-```bash
-# Clone this repository
-$ git clone https://github.com/robertokbr/GoBarber-Web
-
-# Go into the repository
-$ cd GoBarber-Web
-
-# Install dependencies
-$ yarn install
-
-# Run the app
-$ yarn start
-```
----
 
 <h1 align="center">
     <img src="https://camo.githubusercontent.com/ab9f94b1f47bf05fbf0f99d65a802f638cb38f21/68747470733a2f2f692e696d6775722e636f6d2f613334616f30782e706e67" width="100px" /><br>
@@ -94,102 +59,6 @@ $ yarn start
     <img alt="Repository issues" src="https://img.shields.io/github/issues/robertokbr/GoBarber.svg">
   </a>
   
-# 🚧 In progress
-
-## 🕹 Features
-
-* Create User
-* Create Session by E-mail and Password, and get a JWT token
-* Use Authenticated Routes
-* Create Appointments with User - Appointments relation one to many
-* Get Appointments
-* Upload Avatar
-* Update Avatar 
-* ...🔧
-
-
-## 🏗 Architecture:
-* `Runtime`: Node.JS with TypeScript 
-* `API`: RESTfull
-* `Architectural pattern`: Data mapper pattern with DDD
-* `ORM`: Typeorm
-* `Persistent data store`: Docker Postgres
-* `Authentication`: JWT
-
-
-## 🔧 Other configs
-
-* Global Exception catch class
-
-* Middleware ```ensureAuthenticated``` to compare the auth JWT token with the provided key 
-
-* BcryptJs to store the user key as a hash
-
-## :information_source: How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com), Node.js v10.16 or higher + yarn v1.13 or higher installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/robertokbr/GoBarber
-
-# Go into the repository
-$ cd GoBarber
-
-# Install dependencies
-$ yarn 
-```
----
-
-## How to Run Postgres Database at Docker
-
-* [Install Docker](https://www.notion.so/Instalando-Docker-6290d9994b0b4555a153576a1d97bee2)
-
-```bash
-# Create a Postgres Image
-$ docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:54
-32 -d postgres
-```
-
-## Docker Alternative
-* ``OBS``: If you dont wanna run the database at Docker, and you preferer a simple alternative  I recommend you to change the database to Sqlite3, for this you have to:
-```bash
-# Install Sqlite3
-$ yarn add sqlite3 
-```
-* Copy and paste it in the ormConfig.json:
-```
-{
-  "name": "default",
-  "type": "sqlite",
-  "database": "./src/database/db.sqlite3",
-  "autoSchemaSync": true,
-  "entities": [
-    "src/models/*.ts"
-  ],
-  "logging": {
-    "logQueries": true
-  },
-
-  "migrations": [
-    "./src/database/migrations/*.ts"
-  ],
-  "cli": {
-    "entitiesDir": "src/models",
-    "migrationsDir": "./src/database/migrations"
-  }
-}
-
-```
-
-## How to Run the Server:
-```bash
-# Run migrations
-$ yarn typeorm migratios:run
-
-# Run localhost server
-$ yarn dev:server
-```
 
 <h1 align="center">
     <img src="https://camo.githubusercontent.com/ab9f94b1f47bf05fbf0f99d65a802f638cb38f21/68747470733a2f2f692e696d6775722e636f6d2f613334616f30782e706e67" width="100px" /><br>
@@ -226,43 +95,6 @@ $ yarn dev:server
  <img src="https://github.com/robertokbr/GoBarber-Mobile/blob/master/.GIthub/IMG_4947.PNG" width="300"/> <img src="https://github.com/robertokbr/GoBarber-Mobile/blob/master/.GIthub/IMG_4948.PNG" width="300"/> <img src="https://github.com/robertokbr/GoBarber-Mobile/blob/master/.GIthub/IMG_4951.PNG" width="300"/>
 </p>
 
-
-# 🚧 In progress
-
-- [React-Native with Typescript](https://reactjs.org) - A JavaScript library for building user interfaces
-- [Expo]()
-- [React-hooks]()
-- [Context-api]()
-- [Styled-components]()
-- [Yup]()
-- [Expo-vector-icons]()
-- [react-native-unimodules]()
-- [Eslint]()
-- [Prettier]()
-- [EditorConfig]()
-
-## 🎈 Objective of the project
-
-* Study the development of a application from the scratch
-
-## :information_source: How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16][nodejs] or higher + [Yarn v1.13][yarn] or higher installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/robertokbr/GoBarber-Mobile
-
-# Go into the repository
-$ cd GoBarber-Mobile
-
-# Install dependencies
-$ yarn install
-
-# Run the app
-$ yarn start
-```
----
 
 
 Roberto Junior :wave: [Join me on Linkedin!](https://www.linkedin.com/in/robertojrcdc/)
